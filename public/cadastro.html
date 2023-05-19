@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header id="header">
+    <img 
+    class="logoo"
+      src="imagens/caderno.png"
+
+    />
+    <nav id="nav">
+      <button
+        aria-label="Abrir Menu"
+        id="btn-mobile"
+        aria-haspopup="true"
+        aria-controls="menu"
+        aria-expanded="false"
+      >
+        Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li> <a href="index.html" data-menu="HOME"> HOME</a></li>
+        <li> <a href="cadastro.html" data-menu="CADASTRO">CADASTRO</a></li>
+        <li> <a href="login.html">LOGIN</a></li>
+      </ul>
+    </nav>
+
+
+
+  </header>
+    
+    <h1>Crie o relatório de desempenho do funcionário:</h1>
+
+
+
+
+
+
+
+        <div class="login-box">
+ 
+          <form>
+        
+              <div class="user-box">
+                <input type="text" id="nome" required>
+                <label>Nome:</label>
+               
+              </div>
+              <div class="user-box">
+                  <input type="text" id="cpfCadastro">
+                  <label>CPF:</label>
+              </div>
+  
+          
+            <div class="user-box">
+              <input type="number" id="idade" required>
+              <label>Idade: </label>
+            </div>
+  
+            <div class="user-box">
+              <input type="password" id="senha" required>
+              <label>Senha: </label>
+            </div>
+  
+              <div class="user-box">
+                  <input type="date" id="data" required>
+                  <label>Data de contratação: </label>
+                </div>
+  
+                <div class="user-box">
+                  <input type="text" id="cargo" required>
+                  <label>Cargo: </label>
+                </div>
+  
+                <div class="user-box">
+                  <input type="text" id="objetivo" required>
+                  <label>Objetivos alcançados: </label>
+                </div>
+  
+                <div class="user-box">
+                  <input type="text" id="pontoF" required>
+                  <label>Pontos fortes: </label>
+                </div>
+                <div class="user-box">
+                  <input type="text" id="pontoM" required>
+                  <label>Pontos de melhoria: </label>
+                </div>
+                <div class="user-box">
+                  <input type="text" id="sugestoes" required>
+                  <label>Sugestões para o futuro e observações adicionais: </label>
+                </div>
+            
+          </form>
+
+          <br>
+          
+          <input type="button" onclick="enviarDados()" value="Enviar" class="button-name">
+  
+        </div>
+  
+    
+  
+  
+
+
+
+
+
+
+    <script src="cadastroScript.js">
+
+    </script>
+
+</body>
+</html>

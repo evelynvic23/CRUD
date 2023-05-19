@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-Vindo</title>
+    <link rel="stylesheet" href="bemvindo.css">
+
+ 
+</head>
+<body>
+
+    <h1>Bem-Vindo</h1>
+    <br>
+
+    <h2>Tenha acesso aos relatórios: </h2>
+
+    <br><br>
+
+    <a href="dados.html">    <h3>Veja os dados: </h3></a>
+
+
+
+
+   
+
+
+
+
+  
+
+
+    <div class="login-box2">
+      
+      <form onsubmit="event.preventDefault() ; fazerLogin()">
+
+ 
+        <div class="login-box">
+ 
+          <form>
+              <div class="user-box2">
+                <label>ID:</label>
+                  <input type="text" id="id">
+              
+              </div>
+    
+        
+              <div class="user-box2">
+                <label>Nome:</label>
+                <input type="text" id="nomeAtualizar" required>
+             
+               
+              </div>
+              <div class="user-box2">
+                <label>CPF:</label>
+                  <input type="text" id="cpfAtualizar">
+              
+              </div>
+  
+          
+            <div class="user-box2">
+              <label>Idade: </label>
+              <input type="number" id="idadeAtualizar" required>
+             
+            </div>
+  
+            <div class="user-box2">
+              <label>Senha: </label>
+              <input type="password" id="senhaAtualizar" required>
+            
+            </div>
+  
+              <div class="user-box2">
+                <label>Data de contratação: </label>
+                  <input type="date" id="dataAtualizar" required>
+            
+                </div>
+  
+                <div class="user-box2">
+                  <label>Cargo: </label>
+                  <input type="text" id="cargoAtualizar" required>
+                 
+                </div>
+  
+                <div class="user-box2">
+                  <label>Objetivos alcançados: </label>
+                  <input type="text" id="objetivoAtualizar" required>
+        
+                </div>
+  
+                <div class="user-box2">
+                  <label>Pontos fortes: </label>
+                  <input type="text" id="pontoFAtualizar" required>
+                
+                </div>
+                <div class="user-box2">
+                  <label>Pontos de melhoria: </label>
+                  <input type="text" id="pontoMAtualizar" required>
+                 
+                </div>
+                <div class="user-box2">
+                  <label>Sugestões para o futuro e observações adicionais: </label>
+                  <input type="text" id="sugestoesAtualizar" required>
+             
+                </div>
+            
+          </form>
+          
+          <input type="button" onclick="buscarDados()" value="Buscar">
+      <input type="button" onclick="atualizarDados()" value="Atualizar">
+  
+        </div>
+  
+    
+        <a href="delete.html">
+
+          <h3>Clique para deletar um cadastro</h3></a>
+  
+
+
+    <script src="bem.js">
+
+    </script>
+
+
+    <script src="login.js">
+
+    </script>
+    
+</body>
+</html>

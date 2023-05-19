@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body id="body2">
+
+  <header id="header">
+    <img 
+    class="logoo"
+      src="imagens/caderno.png"
+
+    />
+    <nav id="nav">
+      <button
+        aria-label="Abrir Menu"
+        id="btn-mobile"
+        aria-haspopup="true"
+        aria-controls="menu"
+        aria-expanded="false"
+      >
+        Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li> <a href="index.html" data-menu="HOME"> HOME</a></li>
+        <li> <a href="cadastro.html" data-menu="CADASTRO">CADASTRO</a></li>
+        <li> <a href="login.html">LOGIN</a></li>
+      </ul>
+    </nav>
+
+
+
+  </header>
+
+       
+        <h1>Login de avaliação de Desempenho </h1>
+
+    <!-- Para não atualizar a página devido enviar solicitação ao servidor  de uma requisição solicita. Usando o event.preventDefault -->
+
+
+
+
+    <div class="login-box2">
+      
+      <form onsubmit="event.preventDefault() ; fazerLogin()">
+
+ 
+      <form>
+        <div class="user-box2">
+          <input type="text" id="nome" required>
+          <label>Nome:</label>
+         
+        </div>
+   
+        <div class="user-box2">
+          <input type="password" id="senha" required>
+          <label>Senha: </label>
+        </div>
+
+        <input class="button-name" type="submit" value="Entrar">
+      
+      </form>
+
+
+
+    
+    </div>
+    
+
+  <script>
+    function fazerLogin(){
+      const nome = document.getElementById("nome").value;
+      const senha = document.getElementById("senha").value;
+  
+  
+      fetch("http://localhost:3000/pessoas")
+      .then(response => response.json())
+      .then(encontra => {
+          //Busca cujo o nome e idade coincidem com os valores digitados. Esse p seria o parâmetro do find(procurar). Função CallBack
+          const pessoa = encontra.find(p => p.nome === nome && p.senha == senha);
+  
+  
+          if(pessoa){
+              window.location.href = "bemvindo.html";
+          }else{
+              alert("Nome e senha não encontrados no banco de Dados :( ");
+          }
+      })
+  }
+  </script>
+    
+</body>
+</html>

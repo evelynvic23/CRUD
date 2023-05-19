@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body id="body3">
+
+    <header id="header">
+        <img 
+        class="logoo"
+          src="imagens/caderno.png"
+    
+        />
+        <nav id="nav">
+          <button
+            aria-label="Abrir Menu"
+            id="btn-mobile"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            Menu
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li> <a href="index.html" data-menu="HOME"> HOME</a></li>
+            <li> <a href="cadastro.html" data-menu="CADASTRO">CADASTRO</a></li>
+            <li> <a href="login.html">LOGIN</a></li>
+          </ul>
+        </nav>
+    
+    
+    
+      </header>
+
+<main>
+
+
+  <br>
+  <br>
+  <br><br>
+
+  <div class="tudo">
+    <div class="titulo">
+      <p> Relatório de desempenho</p>
+    </div>
+    <div class="card">
+
+
+      <div class="textos">
+
+
+    
+      <p>Para desenvolver um relátorio clique <a href="cadastro.html">aqui</a> </p>
+
+      <br>
+  
+      <p>Para ter acesso aos seus dados clique <a href="login.html">aqui</a> </p>
+  
+    
+    </div>
+    
+    </div>
+  </div>
+
+ 
+
+
+
+
+
+
+ 
+</main>
+
+<footer>
+
+</footer>
+
+
+<script>
+
+    const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(event) {
+   if (event.type === 'touchstart') event.preventDefault();
+   const nav = document.getElementById('nav');
+   nav.classList.toggle('active');
+   const active = nav.classList.contains('active');
+   event.currentTarget.setAttribute('aria-expanded', active);
+   if (active) {
+      event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+   } else {
+      event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+   }
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+ btnMobile.addEventListener('touchstart', toggleMenu);
+
+</script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

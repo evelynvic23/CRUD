@@ -1,0 +1,529 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ruda:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ruda:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Raleway:wght@500&display=swap');
+
+/* ////////////  Estilo da página cadastro //////////// */
+body{
+  background-image: url(imagens/fundo.png);
+  background-size: cover;
+}
+.login-box {
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    width: 700px;
+    height: 800px;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    background: #50bb12af;
+    box-sizing: border-box;
+    box-shadow: 0 20px 30px #f1f1f1;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ruda', sans-serif;
+
+   
+  }
+
+
+
+  .login-box:hover{
+    transition: 2s;
+    background: #53b61a48;
+    box-shadow: 0 20px 30px #000000;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 42px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: -1px 0;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ruda', sans-serif;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -23px;
+    left: 0;
+    color: #fffef3;
+    font-size: 18px;
+    
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ruda', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+
+   .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+
+  .button-name {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,rgba(45, 35, 66, 0.15) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 16px;
+   }
+   
+   .button-name:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+   }
+   
+   .button-name:hover {
+    box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+   }
+   
+   .button-name:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+   }
+
+
+
+  
+   /* ////////////  Estilo da página cadastro  fimmm //////////// */
+
+   #body2{
+    background-image: url(imagens/fundo2.jpg);
+ 
+    background-size: cover;
+   }
+
+   .login-box2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #59d412ce;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box2 .user-box2 {
+    position: relative;
+  }
+  
+  .login-box2 .user-box2 input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box2 .user-box2 label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box2 .user-box2 input:focus ~ label,
+  .login-box2 .user-box2 input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #bdb8b8;
+    font-size: 12px;
+  }
+  
+  .login-box2 form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box2 a:hover {
+    background: #03f40f;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03f40f,
+                0 0 25px #03f40f,
+                0 0 50px #03f40f,
+                0 0 100px #03f40f;
+  }
+  
+  .login-box2 a span {
+    position: absolute;
+    display: block;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box2 a span:nth-child(1) {
+    bottom: 2px;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03f40f);
+    animation: btn-anim1 2s linear infinite;
+  }
+    
+  .slider {
+    overflow: hidden;
+    background-color: white;
+    margin: 0 16px;
+    height: 40px;
+    width: 15px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 30px #fff,
+      inset -5px -5px 10px rgba(0, 0, 255, 0.1),
+      inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.3), 0px 420px 0 400px #8ada0a,
+      inset 0px 0px 0px rgba(0, 0, 0, 0.1);
+    animation: animate_2 2.5s ease-in-out infinite;
+    animation-delay: calc(-0.5s * var(--i));
+  }
+  
+  @keyframes animate_2 {
+    0% {
+      transform: translateY(250px);
+      filter: hue-rotate(0deg);
+    }
+  
+    50% {
+      transform: translateY(0);
+    }
+  
+    100% {
+      transform: translateY(250px);
+      filter: hue-rotate(180deg);
+    }
+  }
+
+  
+  .mov{
+    margin-top: 10%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* /////////////////////////////// Página Home ////////////////////////// */
+
+
+
+#body3{
+  background-image: url(imagens/fundo3.jpg);
+  background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+///////////////////// Menu //////////////////////// */
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+
+
+
+.logoo{
+  width: 6%;
+  margin-top: 2%;
+}
+
+#menu {
+  margin-top: 6%;
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  
+}
+
+#menu a {
+  
+  display: block;
+  padding: 3.0rem;
+  color: #d2e00a;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+
+  
+}
+
+#menu a:hover{
+
+  transition: 2s;
+  color: #00e01e;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #f7e7d1;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    
+  }
+
+  #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+  }
+
+  #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+      color: #332915;
+   
+  }
+
+  #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+  }
+
+  #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+  }
+
+  #nav.active #hamburger {
+      border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+      transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+  }
+  .logoo{
+    display: none;
+  }
+}
+
+
+
+/* Página Home //////////////////////////////////////// */
+
+.card {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 550px;
+  height: 640px;
+  background: rgba(252, 252, 252, 0.308);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-size: 24px;
+margin-right: 32%;
+  color: black;
+
+   padding: 1%;
+   /* padding-top: 10%; */
+}
+
+.card:hover {
+  border: 1px solid rgba(0, 0, 0, 0.582);
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.titulo{
+  /* border: 2px solid black; */
+  width: 20%;
+ margin-top: 7%;
+ font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 50px;
+  margin-left: 7%;
+  font-weight: 300;
+
+
+  position: relative;
+}
+
+
+
+
+
+
+.tudo{
+  /* border: 3px solid red; */
+  display: flex;
+}
+
+h1{
+  margin: 3%;
+  color: whitesmoke;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
