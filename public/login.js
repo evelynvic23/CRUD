@@ -47,7 +47,7 @@ function atualizarDados(){
 
     
         
-    fetch(`http://localhost:3000/pessoas/${id}`,{
+    fetch(`pessoas/${id}`,{
         method: "PUT",
         headers:{
             'Content-Type' : 'application/json'
