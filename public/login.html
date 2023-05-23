@@ -78,7 +78,7 @@
       const senha = document.getElementById("senha").value;
   
   
-      fetch("http://localhost:3000/pessoas")
+      fetch('pessoas')
       .then(response => response.json())
       .then(encontra => {
           //Busca cujo o nome e idade coincidem com os valores digitados. Esse p seria o parâmetro do find(procurar). Função CallBack
